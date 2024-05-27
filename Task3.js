@@ -2,7 +2,7 @@ const axios = require('axios');
 
 describe('Получение факта о котах', () => {
 
-  it('Отправка GET запроса и проверка параметров овета', async () => {
+  it('Отправка GET запроса и проверка параметров ответа', async () => {
     const response = await axios.get(`https://catfact.ninja/fact`);
 
     expect(response.status).toBe(200)
